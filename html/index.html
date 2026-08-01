@@ -17,45 +17,104 @@
     </main>
     <footer></footer>
     <!-- form -->
-
+    <!-- step, minlingth, maxlength, value, readonly, autofocus, multiple  -->
     <form>
       <h3>Register</h3>
       <div>
         <label for="firstName">First Name</label>
-        <input type="text" name="firstName" id="firstName" />
+        <input type="text" name="firstName" id="firstName" required />
       </div>
       <div>
         <label for="lastName">Last Name</label>
-        <input type="text" name="lastName" id="lastName" />
+        <input
+          type="text"
+          name="lastName"
+          id="lastName"
+          readonly
+          placeholder="shorman"
+          value="shorman"
+        />
       </div>
 
       <div>
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          autofocus
+          value="example@email.com"
+          required
+          placeholder="enter your email"
+        />
       </div>
-
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <div>
+        <label for="password">Password: </label>
+        <input
+          type="password"
+          name=""
+          id=""
+          required
+          minlength="8"
+          maxlength="30"
+        />
+      </div>
       <div>
         <label for="phoneNumber">Phone Number</label>
-        <input type="tel" name="phoneNumber" id="phoneNumber" />
+        <input
+          type="tel"
+          name="phoneNumber"
+          id="phoneNumber"
+          disabled
+          value="+962 786767564"
+        />
       </div>
-
+      <div>
+        <label for="">Age</label>
+        <input
+          type="number"
+          name=""
+          id=""
+          required
+          min="15"
+          max="30"
+          step="5"
+        />
+      </div>
+      <button type="submit">Create New Account</button>
+      <button disabled>disabled</button>
       <div>
         <label>Gender: </label>
         <br />
         <label for="female">Female</label>
-        <input type="radio" id="female" name="gender" value="female" />
+        <input type="radio" checked id="female" name="gender" value="female" />
         <br />
         <label for="male">Male</label>
         <input type="radio" id="male" name="gender" value="male" />
       </div>
-
+      <div>
+        <h5>subjects</h5>
+        <select multiple name="" id="">
+          <option value="">cs</option>
+          <option value="">cis</option>
+          <option value="">cys</option>
+          <option value="">bit</option>
+          <option value="">mit</option>
+          <option value="">ash</option>
+        </select>
+      </div>
       <div>
         <h5>Country</h5>
         <select name="country" id="">
           <option value="">select..</option>
           <option value="jordan">Jordan</option>
           <option value="egypt">Egypt</option>
-          <option value="lebanon">Leb</option>
+          <option selected value="lebanon">Leb</option>
           <option value="tonisia">Tons</option>
           <option value="ksa">KSA</option>
         </select>
@@ -64,7 +123,7 @@
       <div>
         <h5>Hoppy</h5>
         <label for="swim">Swim</label>
-        <input type="checkbox" name="hoppy" id="swim" value="swim" />
+        <input checked type="checkbox" name="hoppy" id="swim" value="swim" />
         <br />
         <label for="read">reading</label>
         <input type="checkbox" name="hoppy" id="read" value="reading" />
@@ -96,15 +155,9 @@
       </div>
 
       <div>
-        <label for="">Age</label>
-        <input type="number" name="" id="" />
-      </div>
-
-      <div>
         <label for="">insert cv</label>
         <input type="file" name="" id="" />
       </div>
-      <button type="submit">Create New Account</button>
     </form>
   </body>
 </html>
