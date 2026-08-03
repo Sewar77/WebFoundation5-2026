@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+  </head>
+  <body>
+    <table border="1">
+      <caption>
+        this is employees data
+      </caption>
+      <!-- thead , ibody is optional -->
+      <thead>
+        <!-- columns name -->
+        <tr>
+          <!-- table row -->
+          <th>id</th>
+          <!-- cell -->
+          <th>name</th>
+          <th colspan="2">email</th>
+          <th>age</th>
+          <th>adress</th>
+          <th>salary</th>
+        </tr>
+        <!-- header in table contains only on tr -->
+      </thead>
+
+      <tbody>
+        <!-- column data -->
+        <!-- multiple tr -->
+        <tr>
+          <!-- first row -->
+          <td>1</td>
+          <td>sewar</td>
+          <td>sewar@gmail.com</td>
+          <td>sewar@gmail.com</td>
+          <td>44</td>
+          <td>amman</td>
+          <td>200</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>ali</td>
+          <td>ali@gmail.com</td>
+          <td>ali@gmail.com</td>
+          <td>34</td>
+          <td rowspan="5">irbid</td>
+          <td>200</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>ali</td>
+          <td>ali@gmail.com</td>
+          <td>ali@gmail.com</td>
+          <td>23</td>
+          <td>200</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>ali</td>
+          <td>ali@gmail.com</td>
+          <td>ali@gmail.com</td>
+          <td>34</td>
+          <td>200</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>ali</td>
+          <td>ali@gmail.com</td>
+          <td>ali@gmail.com</td>
+          <td>34</td>
+          <td>200</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>ali</td>
+          <td>ali@gmail.com</td>
+          <td>ali@gmail.com</td>
+          <td>34</td>
+          <td>200</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <!-- sum of td is the same number for th -->
+          <td colspan="6">Total</td>
+          <td>6000</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
